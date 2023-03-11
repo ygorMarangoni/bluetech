@@ -1,0 +1,80 @@
+.resultados {
+  margin-top: 40px;
+  padding: 60px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  background-color: #36363618;
+}
+
+.resultados h2 {
+  font-family: "Righteous", "Bauhaus 93";
+  font-style: normal;
+  font-size: 130px;
+  line-height: 120px;
+  letter-spacing: 0.01em;
+  color: #ededed;
+  margin: 0;
+  padding: 0;
+  text-shadow: 0px 4px 4px rgba(25, 31, 34, 0.356);
+  word-wrap: 400px;
+}
+
+.resultados-mbl {
+  display: none;
+}
+.resultados div div {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.resultados div div img {
+  width: 250px;
+  border-radius: 4px;
+}
+
+@media (max-width: 950px) {
+  .resultados {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .resultados-desk {
+    display: none;
+  }
+  .resultados-mbl {
+    display: block;
+  }
+  .resultados div {
+    margin-top: 90px;
+  }
+
+  .resultados div div img {
+    width: 230px;
+  }
+}
+
+@media (max-width: 700px) {
+  .resultados .resultados-mbl {
+    font-size: 70px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 470px) {
+  .resultados div {
+    margin-top: 20px;
+  }
+  .resultados div div img {
+    width: 130px;
+  }
+}
+
+@media (max-width: 425px) {
+  .resultados .resultados-mbl {
+    font-size: 55px;
+    margin: 0;
+  }
+}

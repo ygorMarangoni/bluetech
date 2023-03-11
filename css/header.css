@@ -1,0 +1,89 @@
+header {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  padding: 0px 100px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.blue {
+  background: linear-gradient(180deg, #52abfe 50%, #2989e3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  text-decoration: none;
+  font-family: "Righteous", "Bauhaus 93";
+  font-weight: 400;
+  font-size: 50px;
+}
+
+.infomarcoes {
+  display: flex;
+  list-style: none;
+}
+
+.infomarcoes li {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+header ul li .peso {
+  font-size: 24px;
+  text-shadow: none;
+  transform: rotate(-45deg);
+  margin-left: 40px;
+}
+
+.icon-menu {
+  font-size: 35px;
+  margin-right: 25px;
+}
+
+.local h3,
+.telefone h3,
+.horario h3 {
+  font-family: "Open Sans", "Bahnschrift";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+
+  color: #ededed;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.local p,
+.telefone p,
+.horario p {
+  font-family: "Open Sans", "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #949393d3;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1150px) {
+  header {
+    padding: 0px;
+    justify-content: center;
+  }
+  .logo {
+    text-align: center;
+  }
+  .infomarcoes {
+    display: none;
+  }
+}

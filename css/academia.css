@@ -1,0 +1,132 @@
+.academia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  place-items: center;
+  padding-top: 80px;
+  margin-top: -7px;
+  background-color: #36363618;
+  padding-bottom: 60px;
+}
+
+.academia-txt h2 {
+  font-family: "Righteous", "Bauhaus 93";
+  font-style: normal;
+  font-size: 100px;
+  letter-spacing: 0.01em;
+  color: #ededed;
+  margin: 0;
+  padding: 0;
+  text-shadow: 0px 2px 4px rgb(56, 67, 73);
+}
+
+.academia-txt p {
+  width: 600px;
+  font-size: 22px;
+  line-height: 150%;
+  font-family: "roboto";
+  color: #dfdcdcb2;
+}
+.espaçamento {
+  letter-spacing: 1px;
+}
+.academia-txt a {
+  margin-top: 30px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Open Sans", "Bahnschrift";
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 2px solid #2989e3;
+  animation: growth 4s linear infinite;
+  filter: drop-shadow(-1px -1px 2px rgba(41, 137, 227, 0.253))
+    drop-shadow(1px 1px 2px rgba(41, 137, 227, 0.253));
+}
+
+.academia-img img {
+  filter: drop-shadow(-1px -1px 3px rgba(41, 137, 227, 0.253))
+    drop-shadow(1px 1px 3px rgba(41, 137, 227, 0.253));
+  border: 2px solid #2989e3;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 100%;
+  margin-right: 5px;
+}
+
+@keyframes growth {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1250px) {
+  .academia {
+    grid-template-columns: 1fr;
+  }
+
+  .academia-img img {
+    margin-top: 80px;
+  }
+
+  .academia-img {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .academia-img img {
+    max-width: 60%;
+    margin-right: 0px;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .academia-txt h2 {
+    font-size: 60px;
+  }
+
+  .academia-txt p {
+    width: 450px;
+    font-size: 18px;
+    line-height: 150%;
+    font-family: "roboto";
+    color: #dfdcdcb2;
+  }
+}
+
+@media (max-width: 450px) {
+  .academia-txt p {
+    width: 400px;
+  }
+}
+
+@media (max-width: 425px) {
+  .academia-txt {
+    padding-left: 10px;
+  }
+  .academia-txt p {
+    width: 360px;
+    font-size: 16px;
+  }
+
+  .academia-img img {
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 370px) {
+  .academia-txt p {
+    width: 320px;
+    font-size: 16px;
+  }
+}

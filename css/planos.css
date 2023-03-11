@@ -1,0 +1,163 @@
+.planos h2 {
+  font-family: "Righteous", "Bauhaus 93";
+  font-style: normal;
+  font-size: 100px;
+  letter-spacing: 0.01em;
+  color: #ededed;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.planos {
+  padding-top: 60px;
+}
+
+.planos h3 {
+  text-align: center;
+  letter-spacing: 6px;
+  padding: 0;
+  margin: 0px;
+  font-weight: 500;
+  margin-top: -10px;
+  font-size: 22px;
+  color: #9493938c;
+  font-family: "Roboto";
+}
+
+.planos-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.planos-cards div {
+  padding: 20px;
+  border: 2px solid #2989e3;
+  border-radius: 5px;
+  display: grid;
+  box-shadow: -2px -2px 4px rgba(41, 137, 227, 0.253),
+    2px 2px 4px rgba(41, 137, 227, 0.253);
+  margin-bottom: 60px;
+}
+
+.planos div h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Bahnschrift";
+  font-weight: 700;
+  font-size: 26px;
+  color: #ededed;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.342);
+  margin-bottom: 10px;
+}
+
+.planos div h5 {
+  font-size: 90px;
+  grid-column: 1/-1;
+  justify-self: center;
+  font-family: "Open Sans", "Bahnschrift";
+  padding: 0;
+  margin: 0;
+  color: #ededed;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.planos div p {
+  color: #949393d3;
+  font-family: "Open Sans", "Bahnschrift";
+  margin: 0;
+  font-size: 20px;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.342);
+}
+
+.planos div a {
+  grid-column: 1/-1;
+  display: block;
+  justify-self: center;
+  text-decoration: none;
+  font-size: 22px;
+  margin-top: 25px;
+  font-family: "Open Sans", "Bahnschrift";
+  border: 2px solid #2989e3;
+  padding: 10px 20px;
+  border-radius: 5px;
+  filter: drop-shadow(-1px -1px 2px rgba(41, 137, 227, 0.253))
+    drop-shadow(1px 1px 2px rgba(41, 137, 227, 0.253));
+  transition: 0.5s;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.151);
+  text-align: center;
+}
+
+.planos div a:hover {
+  transform: scale(1.03);
+}
+
+.sujestao {
+  font-size: 18px;
+  padding: 5px 10px;
+  color: #00507e;
+  background-color: #5fa9d3;
+  font-weight: 700;
+  position: absolute;
+  font-family: "Open Sans", "Bahnschrift";
+  font-weight: 400;
+  top: -18px;
+  justify-self: center;
+  border-radius: 4px;
+}
+
+.div-1 {
+  margin-right: 80px;
+}
+
+.div-3 {
+  margin-left: 80px;
+}
+
+.weight-1 {
+  position: absolute;
+  top: -30px;
+  transform: rotate(90deg);
+  font-size: 17px;
+  font-weight: 900;
+  justify-content: start;
+  left: 43px;
+}
+.weight-2 {
+  position: absolute;
+  top: -29px;
+  font-size: 17px;
+  font-weight: 900;
+  justify-self: end;
+  right: 45px;
+}
+
+@media (max-width: 950px) {
+  .div-3 {
+    margin-left: 0px;
+  }
+
+  .div-1 {
+    margin-right: 0px;
+  }
+  .planos-cards div {
+    width: 60%;
+  }
+}
+
+@media (max-width: 430px) {
+  .planos h2 {
+    font-size: 70px;
+  }
+  .planos-cards div {
+    width: 70%;
+  }
+
+  .planos h3 {
+    margin-top: 0px;
+    font-size: 20px;
+  }
+}
